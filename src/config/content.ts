@@ -36,6 +36,7 @@ export const portfolioData = {
             title: "Analyst",
             location: "Mumbai, India",
             date: "Dec 2024 - July 2025",
+            url: "https://www.capgemini.com",
             description: [
                 "Developed a real-time data ingestion platform (Python/Angular) processing >100,000 data points/min for dynamic business analytics.",
                 "Implemented predictive models (Scikit-learn/TensorFlow) reducing data processing time by 40% and yielded key business insights.",
@@ -47,6 +48,7 @@ export const portfolioData = {
             title: "IoT Application Developer Intern",
             location: "Pune, India",
             date: "July 2023 - June 2024",
+            url: "#",
             description: [
                 "Led full-stack IoT application development (Angular/Node.js), enabling real-time monitoring of over 500 sensors with <1 second data retrieval latency.",
                 "Architected a data management system for offline functionality, ensuring 100% data integrity across synchronization.",
@@ -58,14 +60,32 @@ export const portfolioData = {
     projects: [
         {
             title: "Internship Management Portal",
-            tech: ["React", "Python"],
-            description: "Automated processing of university internship data using React and Python, reducing administrative workload by eliminating manual evaluation steps."
-    },
+            tech: ["React", "Python", "Automation"],
+            description: "A comprehensive platform that automated university internship data processing. It eliminated manual evaluation steps and streamlined the assignment of students to faculty supervisors, significantly reducing administrative workload.",
+            // In a real app, you would add an image path here, e.g., image: "/projects/internship.png"
+            links: { github: "#", external: "#" }
+        },
         {
-            title: "Solar Power Plant Maintenance Prediction",
-            tech: ["Machine Learning", "Random Forest", "LGBM", "Linear Regression"],
-            description: "Developed predictive models to forecast maintenance needs based on environmental impact factors like dust and bird droppings."
-    }
+            title: "Solar Power Prediction Model",
+            tech: ["Python", "Random Forest", "LGBM", "Scikit-learn"],
+            description: "Developed predictive machine learning models to forecast solar plant maintenance needs. The system analyzes environmental factors like dust levels and bird droppings to predict efficiency drops, enabling proactive maintenance scheduling.",
+            links: { github: "#", external: "#" }
+        }
+    ],
+
+    featuredProjects: [
+        {
+            title: "Honeypot System using ChatGPT",
+            tech: ["Cybersecurity", "IoT", "IEEE Publication"],
+            description: "Published paper: 'Engaging Attackers with a Highly Interactive Honeypot System Using ChatGPT'. Explored using AI to create dynamic decoys.",
+            links: { github: "#", external: "#" }
+        },
+        {
+            title: "Crypto Wallet for Farmers",
+            tech: ["Blockchain", "Patent"],
+            description: "Indian Patent Office registered innovation. A simplified crypto wallet interface designed specifically for agricultural use cases in emerging markets.",
+            links: { github: "#", external: "#" }
+        }
     ],
 
     skills: [
