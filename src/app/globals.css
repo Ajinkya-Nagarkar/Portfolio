@@ -19,6 +19,8 @@
 /* Basic Smooth Scroll */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  height: 100%;
 }
 
 /* Apply the dark theme to the body */

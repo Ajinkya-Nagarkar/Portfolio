@@ -53,7 +53,7 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
                     <a
-                        href="#experience"
+                        href="/#work"
                         className="border border-green text-green px-8 py-4 rounded font-mono hover:bg-green/10 transition-colors inline-block"
                     >
                         Check out my work!
