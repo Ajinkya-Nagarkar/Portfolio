@@ -18,7 +18,7 @@ export default function Home() {
         When isLoading becomes false, this fades from 0 to 100.
       */}
       <div
-        className={`transition-opacity duration-[1500ms] ease-in-out ${isLoading ? "opacity-0" : "opacity-100"
+        className={`transition-opacity duration-1500 ease-in-out ${isLoading ? "opacity-0" : "opacity-100"
           }`}
       >
         <Hero />
