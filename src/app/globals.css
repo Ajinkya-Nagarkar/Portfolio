@@ -1,48 +1,77 @@
 @import "tailwindcss";
 
+/* 1. Define your custom theme variables */
 @theme {
-  /* Define your custom colors here for Tailwind v4 */
+  /* The Complete Palette */
   --color-navy: #0a192f;
   --color-light-navy: #112240;
   --color-lightest-navy: #233554;
+
   --color-slate: #8892b0;
   --color-light-slate: #a8b2d1;
   --color-lightest-slate: #ccd6f6;
+
   --color-white: #e6f1ff;
   --color-green: #64ffda;
+  --color-green-tint: rgba(100, 255, 218, 0.1);
+  --color-pink: #ff2a6d;
+  --color-offwhite: #f8f9fa;
 
-  /* Link the fonts from layout.tsx */
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-fira-code);
+  --animate-fade-in-up: fadeInUp 1s ease-out forwards;
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
-/* Basic Smooth Scroll */
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px;
-  height: 100%;
+@variant dark (&:where(.dark, .dark *));
+
+/* 3. The Color Logic */
+@layer base {
+  :root {
+    /* LIGHT MODE */
+    --bg-primary: var(--color-offwhite);
+    --text-primary: var(--color-navy);
+    --text-secondary: var(--color-light-navy);
+    --accent: var(--color-pink);
+    --bg-card: #ffffff;
+  }
+
+  :root.dark {
+    /* DARK MODE */
+    --bg-primary: var(--color-navy);
+    --text-primary: var(--color-slate);
+    --text-secondary: var(--color-lightest-slate);
+    --accent: var(--color-green);
+    --bg-card: var(--color-light-navy);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 }
 
-/* Apply the dark theme to the body */
-body {
-  background-color: var(--color-navy);
-  color: var(--color-slate);
-  font-family: var(--font-sans);
-  width: 100%;
-  overflow-x: hidden;
+/* 4. View Transition Magic (The expanding circle) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }
 
-/* Custom "Hacker" Scrollbar */
-::-webkit-scrollbar {
-  width: 12px;
+::view-transition-old(root) {
+  z-index: 1;
 }
 
-::-webkit-scrollbar-track {
-  background: var(--color-navy);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--color-slate);
-  border: 3px solid var(--color-navy);
-  border-radius: 10px;
+::view-transition-new(root) {
+  z-index: 9999;
 }

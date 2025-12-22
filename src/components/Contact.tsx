@@ -17,13 +17,13 @@ export default function Contact() {
                 transition={{ duration: 0.5 }}
                 className="flex items-center gap-4 mb-10"
             >
-                <span className="text-green font-mono text-xl md:text-2xl font-bold">
+                <span className="text-(--accent) font-mono text-xl md:text-2xl font-bold">
                     04.
                 </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-lightest-slate">
+                <h2 className="text-2xl md:text-3xl font-bold text-(--text-secondary)">
                     Get In Touch
                 </h2>
-                <div className="h-[1px] bg-lightest-navy flex-grow ml-4 max-w-xs"></div>
+                <div className="h-px bg-lightest-navy grow ml-4 max-w-xs"></div>
             </motion.div>
 
             {/* 2. The Contact Content (Centered) */}
@@ -34,7 +34,7 @@ export default function Contact() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-center max-w-2xl mx-auto"
             >
-                <p className="text-slate text-lg mb-12 leading-relaxed">
+                <p className="text-(--text-primary) text-lg mb-12 leading-relaxed">
                     I am currently looking for full-time Software Engineering opportunities
                     starting May 2025. Whether you have a question or just want to say hi,
                     my inbox is always open!
@@ -42,7 +42,7 @@ export default function Contact() {
 
                 <a
                     href={`mailto:${portfolioData.personal.email}`}
-                    className="border border-green text-green px-8 py-4 rounded font-mono hover:bg-green/10 transition-colors inline-block"
+                    className="border border-(--accent) text-(--accent) px-8 py-4 rounded font-mono hover:bg-(--accent)/10 transition-colors inline-block"
                 >
                     Say Hello
                 </a>

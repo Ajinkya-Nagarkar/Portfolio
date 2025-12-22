@@ -13,7 +13,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <main className="bg-navy min-h-screen">
+    <main className="min-h-screen">
       {/* The opacity transition here (duration-1000) creates the "Reveal" effect.
         When isLoading becomes false, this fades from 0 to 100.
       */}

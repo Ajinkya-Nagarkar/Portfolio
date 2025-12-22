@@ -15,13 +15,13 @@ export default function FeaturedProjects() {
                 transition={{ duration: 0.5 }}
                 className="flex items-center gap-4 mb-16"
             >
-                <span className="text-green font-mono text-xl md:text-2xl font-bold">
+                <span className="text-(--accent) font-mono text-xl md:text-2xl font-bold">
                     03.
                 </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-lightest-slate">
+                <h2 className="text-2xl md:text-3xl font-bold text-(--text-secondary)">
                     Some Things I've Built
                 </h2>
-                <div className="h-[1px] bg-lightest-navy flex-grow ml-4 max-w-xs"></div>
+                <div className="h-px bg-lightest-navy grow ml-4 max-w-xs"></div>
             </motion.div>
 
             {/* Featured Projects List */}
@@ -40,7 +40,7 @@ export default function FeaturedProjects() {
                - Odd Index: Right side (cols 6-13)
             */}
                         <div
-                            className={`relative h-[300px] md:h-[400px] w-full rounded bg-green/20 overflow-hidden border border-green/20 group 
+                            className={`relative h-75 md:h-100 w-full rounded bg-green/20 overflow-hidden border border-(--accent)/20 group 
               ${index % 2 === 0
                                     ? "md:col-start-1 md:col-end-8" // Image Left
                                     : "md:col-start-6 md:col-end-13" // Image Right
@@ -48,11 +48,11 @@ export default function FeaturedProjects() {
               col-span-full md:row-start-1 z-0 shadow-xl`}
                         >
                             {/* Overlay that fades on hover */}
-                            <div className="absolute inset-0 bg-navy/60 group-hover:bg-transparent transition-all duration-300 z-10"></div>
+                            <div className="absolute inset-0 bg-(--bg-primary)/60 group-hover:bg-transparent transition-all duration-300 z-10"></div>
 
                             {/* Placeholder for Image - Replace with <img> tag later */}
-                            <div className="absolute inset-0 bg-light-navy flex items-center justify-center">
-                                <span className="font-mono text-green text-6xl font-bold opacity-30">
+                            <div className="absolute inset-0 bg-(--bg-card) flex items-center justify-center">
+                                <span className="font-mono text-(--accent) text-6xl font-bold opacity-30">
                                     {project.title.charAt(0)}
                                 </span>
                             </div>
@@ -70,19 +70,19 @@ export default function FeaturedProjects() {
                                 } 
               col-span-full md:row-start-1`}
                         >
-                            <p className="font-mono text-green text-sm mb-2">Featured Project</p>
-                            <h3 className="text-lightest-slate text-2xl font-bold mb-6">
+                            <p className="font-mono text-(--accent) text-sm mb-2">Featured Project</p>
+                            <h3 className="text-(--text-secondary) text-2xl font-bold mb-6">
                                 {project.title}
                             </h3>
 
                             {/* Description Box - The key to the overlap look */}
-                            <div className="bg-light-navy p-6 rounded shadow-xl text-slate text-sm leading-relaxed mb-6 w-full md:w-[110%] z-20">
+                            <div className="bg-(--bg-card) p-6 rounded shadow-xl text-(--text-primary) text-sm leading-relaxed mb-6 w-full md:w-[110%] z-20">
                                 {project.description}
                             </div>
 
                             {/* Tech Stack */}
                             <ul
-                                className={`flex flex-wrap gap-4 text-xs font-mono text-slate/80 mb-8 
+                                className={`flex flex-wrap gap-4 text-xs font-mono text-(--text-primary)/80 mb-8 
                 ${index % 2 === 0 ? "justify-end" : "justify-start"}`}
                             >
                                 {project.tech.map((t, i) => (
@@ -91,11 +91,11 @@ export default function FeaturedProjects() {
                             </ul>
 
                             {/* Links */}
-                            <div className="flex gap-6 text-slate">
-                                <a href={project.links.github} className="hover:text-green transition-colors">
+                            <div className="flex gap-6 text-(--text-primary)">
+                                <a href={project.links.github} className="hover:text-(--accent) transition-colors">
                                     <FiGithub size={22} />
                                 </a>
-                                <a href={project.links.external} className="hover:text-green transition-colors">
+                                <a href={project.links.external} className="hover:text-(--accent) transition-colors">
                                     <FiExternalLink size={22} />
                                 </a>
                             </div>

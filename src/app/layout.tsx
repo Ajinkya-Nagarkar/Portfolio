@@ -3,6 +3,7 @@ import { Inter, Fira_Code } from "next/font/google"; // Import fonts
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import SocialSidebars from "@/components/SocialSidebars";
+import { Providers } from "./providers";
 
 // Setup Google Fonts
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -19,11 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${firaCode.variable} bg-navy text-slate`}>
-        <Navbar />
-        <SocialSidebars />
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className="antialiased">
+        <Providers>
+          <Navbar />
+          <SocialSidebars />
+          {children}
+        </Providers>
       </body>
     </html>
   );

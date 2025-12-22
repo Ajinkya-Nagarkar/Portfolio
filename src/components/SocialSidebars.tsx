@@ -18,7 +18,7 @@ export default function SocialSidebars() {
                     <li>
                         <a
                             href={portfolioData.personal.socials.github}
-                            className="hover:text-green hover:-translate-y-1 transition-all block"
+                            className="hover:text-(--accent) hover:-translate-y-1 transition-all block"
                         >
                             <FiGithub size={20} />
                         </a>
@@ -26,7 +26,7 @@ export default function SocialSidebars() {
                     <li>
                         <a
                             href={portfolioData.personal.socials.linkedin}
-                            className="hover:text-green hover:-translate-y-1 transition-all block"
+                            className="hover:text-(--accent) hover:-translate-y-1 transition-all block"
                         >
                             <FiLinkedin size={20} />
                         </a>
@@ -34,7 +34,7 @@ export default function SocialSidebars() {
                     {/* Add more icons here if you have them */}
                 </ul>
                 {/* The Vertical Line */}
-                <div className="w-[1px] h-24 bg-light-slate"></div>
+                <div className="w-px h-24 bg-light-slate"></div>
             </motion.div>
 
             {/* Right Side - Email */}
@@ -46,13 +46,13 @@ export default function SocialSidebars() {
             >
                 <a
                     href={`mailto:${portfolioData.personal.email}`}
-                    className="font-mono text-xs hover:text-green hover:-translate-y-1 transition-all vertical-writing"
+                    className="font-mono text-s hover:text-(--accent) hover:-translate-y-1 transition-all vertical-writing"
                     style={{ writingMode: "vertical-rl" }}
                 >
                     {portfolioData.personal.email}
                 </a>
                 {/* The Vertical Line */}
-                <div className="w-[1px] h-24 bg-light-slate"></div>
+                <div className="w-px h-24 bg-light-slate"></div>
             </motion.div>
         </>
     );

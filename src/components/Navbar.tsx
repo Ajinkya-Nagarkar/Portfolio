@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Logo from "@/components/Icons/Logo";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navLinks = [
     { name: "About", url: "/#about" },
@@ -29,7 +30,7 @@ export default function Navbar() {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 2.8 }}
-            className={`fixed top-0 w-full z-40 px-6 md:px-10 h-20 flex items-center justify-between transition-all duration-300 ${scrolled ? "bg-navy/90 backdrop-blur-sm shadow-xl" : "bg-transparent"
+            className={`fixed top-0 w-full z-40 px-6 md:px-10 h-20 flex items-center justify-between transition-all duration-300 ${scrolled ? "bg-(--bg-primary)90% backdrop-blur-sm shadow-xl" : "bg-transparent"
                 }`}
         >
             {/* THE LOGO FIX:
@@ -37,7 +38,7 @@ export default function Navbar() {
          It stays invisible (opacity: 0) for 3.5s.
          At 3.5s (when the flying loader finishes), it turns to opacity: 1.
       */}
-            <Link href="/" className="text-green hover:text-green-tint transition-colors">
+            <Link href="/" className="text-(--accent) hover:text-[var(--accent)]-tint transition-colors">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -48,7 +49,7 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Menu */}
-            <ul className="hidden md:flex gap-8 text-sm font-mono text-lightest-slate">
+            <ul className="hidden md:flex gap-8 text-sm font-mono text-(--text-secondary)">
                 {navLinks.map((link, i) => (
                     <motion.li
                         key={i}
@@ -57,8 +58,8 @@ export default function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 3.6 + (i * 0.1), duration: 0.3 }}
                     >
-                        <Link href={link.url} className="hover:text-green transition-colors">
-                            <span className="text-green mr-1">0{i + 1}.</span>
+                        <Link href={link.url} className="hover:text-(--accent) transition-colors">
+                            <span className="text-(--accent) mr-1">0{i + 1}.</span>
                             {link.name}
                         </Link>
                     </motion.li>
@@ -71,10 +72,17 @@ export default function Navbar() {
                     <a
                         href="/resume.pdf"
                         target="_blank"
-                        className="border border-green text-green px-4 py-2 rounded hover:bg-green/10 transition-colors"
+                        className="border border-(--accent) text-(--accent) px-4 py-2 rounded hover:bg-(--accent)/10 transition-colors"
                     >
                         Resume
                     </a>
+                </motion.li>
+                <motion.li
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 4.0, duration: 0.3 }}
+                >
+                    <ThemeToggle />
                 </motion.li>
             </ul>
         </motion.nav>
