@@ -31,14 +31,37 @@ export default function About() {
                     <p className="whitespace-pre-line">{portfolioData.personal.about}</p>
 
                     <p>Here are a few technologies I’ve been working with recently:</p>
-                    <ul className="grid grid-cols-2 gap-2 mt-4 font-mono text-sm">
+                    {/* <ul className="grid grid-cols-2 gap-2 mt-4 font-mono text-sm">
                         {portfolioData.skills.map((skill, i) => (
                             <li key={i} className="flex items-center gap-2">
                                 <span className="text-(--accent)">▹</span>
                                 {skill}
                             </li>
                         ))}
-                    </ul>
+                    </ul> */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+                        {portfolioData.skills.map((category, index) => (
+                            <div key={index}>
+
+                                {/* 1. Category Title (e.g., "Programming Languages") */}
+                                <h3 className="text-(--text-primary) font-bold text-md mb-3">
+                                    {category.title}
+                                </h3>
+
+                                {/* 2. The List of Skills in that Category */}
+                                <ul className="flex flex-wrap gap-x-5 gap-y-2 mt-2 font-mono text-sm">
+                                    {category.tech.map((skill, i) => (
+                                        <li key={i} className="flex items-center gap-2">
+                                            <span className="text-(--accent)">▹</span>
+                                            <span className="text-(--text-secondary) whitespace-nowrap">
+                                                {skill}
+                                            </span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
                 {/* Right Column: Education Cards */}
@@ -54,6 +77,9 @@ export default function About() {
                                 <p className="text-xs uppercase tracking-widest text-(--text-primary)/60">
                                     {edu.date}
                                 </p>
+                                {/* <p className="text-xs uppercase tracking-widest text-(--text-primary)/60">
+                                    CGPA - {edu.gpa}
+                                </p> */}
                             </div>
                         ))}
                     </div>

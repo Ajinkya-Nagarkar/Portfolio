@@ -38,9 +38,9 @@ export const portfolioData = {
             date: "Dec 2024 - July 2025",
             url: "https://www.capgemini.com",
             description: [
-                "Developed a real-time data ingestion platform (Python/Angular) processing >100,000 data points/min for dynamic business analytics.",
-                "Implemented predictive models (Scikit-learn/TensorFlow) reducing data processing time by 40% and yielded key business insights.",
-                "Designed interactive dashboards (amCharts) increasing data visibility by 60% and improved data handling efficiency by 35%."
+                "Built a Python-based real-time data ingestion service to process high-volume event data for internal analytics workflows.",
+                "Developed Angular-based dashboards backed by REST APIs to visualize operational metrics and trends for internal business users.",
+                "Implemented feature engineering and baseline machine learning models using scikit-learn to support downstream analytics and reporting.",
             ]
         },
         {
@@ -50,9 +50,9 @@ export const portfolioData = {
             date: "July 2023 - June 2024",
             url: "#",
             description: [
-                "Led full-stack IoT application development (Angular/Node.js), enabling real-time monitoring of over 500 sensors with <1 second data retrieval latency.",
-                "Architected a data management system for offline functionality, ensuring 100% data integrity across synchronization.",
-                "Integrated Firebase to support >500 active users and improve application load time by 25%."
+                "Developed a full-stack IoT web application using Angular and Node.js to support real-time monitoring of sensor data for internal operations.",
+                "Implemented offline-first data synchronization logic to handle intermittent connectivity and ensure reliable data consistency.",
+                "Integrated Firebase for authentication and data storage, supporting multi-user access and improving application responsiveness."
             ]
         }
     ],
@@ -60,15 +60,15 @@ export const portfolioData = {
     projects: [
         {
             title: "Internship Management Portal",
-            tech: ["React", "Python", "Automation"],
-            description: "A comprehensive platform that automated university internship data processing. It eliminated manual evaluation steps and streamlined the assignment of students to faculty supervisors, significantly reducing administrative workload.",
+            tech: ["React", "Python", "REST APIs", "SQL"],
+            description: "Built a full-stack web application using React and Python to manage university internship data and workflows. Designed backend APIs to handle student submissions, faculty assignments, and approval flows, reducing manual coordination. Implemented role-based access for students and faculty, enabling streamlined tracking of internship status.",
             // In a real app, you would add an image path here, e.g., image: "/projects/internship.png"
             links: { github: "#", external: "#" }
         },
         {
             title: "Solar Power Prediction Model",
             tech: ["Python", "Random Forest", "LGBM", "Scikit-learn"],
-            description: "Developed predictive machine learning models to forecast solar plant maintenance needs. The system analyzes environmental factors like dust levels and bird droppings to predict efficiency drops, enabling proactive maintenance scheduling.",
+            description: "Built a data preprocessing and evaluation pipeline in Python to analyze historical sensor and environmental data from solar plants. Trained and compared baseline machine learning models to assess maintenance prediction feasibility. Analyzed feature importance to identify environmental factors impacting system performance.",
             links: { github: "#", external: "#" }
         }
     ],
@@ -89,8 +89,21 @@ export const portfolioData = {
     ],
 
     skills: [
-        "Python", "C++", "Java", "JavaScript", "TypeScript",
-        "Angular", "React", "Node.js", "Firebase", "SQL",
-        "Linux", "Git", "Docker"
+        {
+            title: "Programming Languages",
+            tech: ["Python", "JavaScript", "TypeScript", "C++"],
+        },
+        {
+            title: "Frameworks & Libraries",
+            tech: ["React", "Angular", "Node.js"],
+        },
+        {
+            title: "Databases",
+            tech: ["SQL", "Firebase"],
+        },
+        {
+            title: "Tools & Platforms",
+            tech: ["Git", "Linux", "Docker"],
+        },
     ]
 };

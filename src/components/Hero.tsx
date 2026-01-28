@@ -37,7 +37,7 @@ export default function Hero() {
                     </h2>
                 </motion.div>
 
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
@@ -45,7 +45,7 @@ export default function Hero() {
                     <p className="text-(--text-primary) text-lg max-w-xl mb-10 leading-relaxed">
                         {portfolioData.personal.about}
                     </p>
-                </motion.div>
+                </motion.div> */}
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
