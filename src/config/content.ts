@@ -1,5 +1,3 @@
-// src/config/content.ts
-
 export const portfolioData = {
     personal: {
         name: "Ajinkya Nagarkar",
@@ -19,7 +17,7 @@ export const portfolioData = {
             degree: "Master of Science in Computer Science",
             location: "Los Angeles, CA",
             date: "Aug 2025 - Present",
-            description: "" // Add coursework if needed later
+            // gpa?"":"",
         },
         {
             school: "Dr. Vishwanath Karad MIT World Peace University",
@@ -66,7 +64,7 @@ export const portfolioData = {
             links: { github: "#", external: "#" }
         },
         {
-            title: "Solar Power Plant Maintenance Predictio",
+            title: "Solar Power Plant Maintenance Prediction",
             tech: ["Python", "Random Forest", "LGBM", "Scikit-learn"],
             description: "Built a data preprocessing and evaluation pipeline in Python to analyze historical sensor and environmental data from solar plants. Trained and compared baseline machine learning models to assess maintenance prediction feasibility. Analyzed feature importance to identify environmental factors impacting system performance.",
             links: { github: "#", external: "#" }

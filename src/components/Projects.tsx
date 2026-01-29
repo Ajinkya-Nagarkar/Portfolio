@@ -20,7 +20,8 @@ export default function OtherProjects() {
             </div>
 
             {/* Grid - Now using 'otherProjects' */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> */}
+            <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory">
                 {portfolioData.projects.map((project, index) => (
                     <motion.div
                         key={index}
@@ -30,7 +31,7 @@ export default function OtherProjects() {
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                         className="bg-(--bg-card) p-8 rounded-lg shadow-xl hover:-translate-y-2 transition-transform duration-300 flex flex-col group h-full"
                     >
-                        <div className="flex justify-between items-center mb-6">
+                        <div className="flex justify-between items-center mb-6 snap-start min-w-[320px]">
                             <FiFolder className="text-4xl text-(--accent)" />
                             <div className="flex gap-4">
                                 <a href={project.links.github} className="text-(--text-primary) hover:text-(--accent)">
