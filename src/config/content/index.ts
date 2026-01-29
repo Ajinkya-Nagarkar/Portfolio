@@ -4,6 +4,7 @@ import { experience } from "./experience";
 import { skills } from "./skills";
 import { manualProjects } from "./projects/manual";
 import { featuredProjects } from "./projects/featured";
+import { githubProjects } from "./projects/github";
 
 export const portfolioData = {
     personal,
@@ -11,5 +12,7 @@ export const portfolioData = {
     experience,
     skills,
     featuredProjects,
-    projects: manualProjects,
+    projects:
+        manualProjects,
+        githubProjects,
 };
