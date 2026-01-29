@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { portfolioData } from "@/config/content";
+import { portfolioData } from "@/config/content/index";
 import { motion } from "framer-motion";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
