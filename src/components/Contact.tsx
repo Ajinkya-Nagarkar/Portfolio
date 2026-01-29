@@ -17,10 +17,7 @@ export default function Contact() {
                 transition={{ duration: 0.5 }}
                 className="flex items-center gap-4 mb-10"
             >
-                <span className="text-(--accent) font-mono text-xl md:text-2xl font-bold">
-                    04.
-                </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-(--text-secondary)">
+                <h2 className="text-2xl md:text-3xl font-bold text-(--accent)">
                     Get In Touch
                 </h2>
                 <div className="h-px bg-lightest-navy grow ml-4 max-w-xs"></div>
@@ -36,7 +33,8 @@ export default function Contact() {
             >
                 <p className="text-(--text-primary) text-lg mb-12 leading-relaxed">
                     I am currently looking for full-time Software Engineering opportunities
-                    starting May 2025. Whether you have a question or just want to say hi,
+                    starting May 2026.
+                    Whether you have a question or just want to say hi,
                     my inbox is always open!
                 </p>
 

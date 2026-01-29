@@ -66,7 +66,7 @@ export const portfolioData = {
             links: { github: "#", external: "#" }
         },
         {
-            title: "Solar Power Prediction Model",
+            title: "Solar Power Plant Maintenance Predictio",
             tech: ["Python", "Random Forest", "LGBM", "Scikit-learn"],
             description: "Built a data preprocessing and evaluation pipeline in Python to analyze historical sensor and environmental data from solar plants. Trained and compared baseline machine learning models to assess maintenance prediction feasibility. Analyzed feature importance to identify environmental factors impacting system performance.",
             links: { github: "#", external: "#" }
@@ -78,13 +78,15 @@ export const portfolioData = {
             title: "Honeypot System using ChatGPT",
             tech: ["Cybersecurity", "IoT", "IEEE Publication"],
             description: "Published paper: 'Engaging Attackers with a Highly Interactive Honeypot System Using ChatGPT'. Explored using AI to create dynamic decoys.",
-            links: { github: "#", external: "#" }
+            links: { github: "#", external: "https://ieeexplore.ieee.org/document/10392228" },
+            image: "/Honeypot.png",
         },
         {
             title: "Crypto Wallet for Farmers",
             tech: ["Blockchain", "Patent"],
             description: "Indian Patent Office registered innovation. A simplified crypto wallet interface designed specifically for agricultural use cases in emerging markets.",
-            links: { github: "#", external: "#" }
+            links: { github: "#", external: "https://patentscope.wipo.int/search/en/detail.jsf?docId=IN438211516" },
+            image: "/Wallet.png",
         }
     ],
 

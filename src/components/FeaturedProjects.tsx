@@ -15,10 +15,7 @@ export default function FeaturedProjects() {
                 transition={{ duration: 0.5 }}
                 className="flex items-center gap-4 mb-16"
             >
-                <span className="text-(--accent) font-mono text-xl md:text-2xl font-bold">
-                    03.
-                </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-(--text-secondary)">
+                <h2 className="text-2xl md:text-3xl font-bold text-(--accent)">
                     Some Things I've Built
                 </h2>
                 <div className="h-px bg-lightest-navy grow ml-4 max-w-xs"></div>
@@ -48,13 +45,15 @@ export default function FeaturedProjects() {
               col-span-full md:row-start-1 z-0 shadow-xl`}
                         >
                             {/* Overlay that fades on hover */}
-                            <div className="absolute inset-0 bg-(--bg-primary)/60 group-hover:bg-transparent transition-all duration-300 z-10"></div>
+                            <div className="absolute inset-0 bg-(--bg-primary)/10 group-hover:bg-transparent transition-all duration-300 z-10"></div>
 
                             {/* Placeholder for Image - Replace with <img> tag later */}
-                            <div className="absolute inset-0 bg-(--bg-card) flex items-center justify-center">
-                                <span className="font-mono text-(--accent) text-6xl font-bold opacity-30">
-                                    {project.title.charAt(0)}
-                                </span>
+                            <div className="absolute inset-0 z-0 bg-(--bg-card) flex items-center justify-center">
+                                <img
+                                    src={project.image}
+                                    alt={project.title.charAt(0)}
+                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                />
                             </div>
                         </div>
 
@@ -70,13 +69,13 @@ export default function FeaturedProjects() {
                                 } 
               col-span-full md:row-start-1`}
                         >
-                            <p className="font-mono text-(--accent) text-sm mb-2">Featured Project</p>
-                            <h3 className="text-(--text-secondary) text-2xl font-bold mb-6">
+                            {/* <p className="font-mono text-(--accent) text-sm mb-2">Featured Project</p> */}
+                            <h3 className="text-(--accent) text-2xl font-bold mb-6">
                                 {project.title}
                             </h3>
 
                             {/* Description Box - The key to the overlap look */}
-                            <div className="bg-(--bg-card) p-6 rounded shadow-xl text-(--text-primary) text-sm leading-relaxed mb-6 w-full md:w-[110%] z-20">
+                            <div className="bg-(--bg-card)/40 p-6 rounded shadow-xl text-(--text-primary) text-sm leading-relaxed mb-6 w-full md:w-[110%] z-20">
                                 {project.description}
                             </div>
 
@@ -92,10 +91,18 @@ export default function FeaturedProjects() {
 
                             {/* Links */}
                             <div className="flex gap-6 text-(--text-primary)">
-                                <a href={project.links.github} className="hover:text-(--accent) transition-colors">
+                                <a
+                                    href={project.links.github}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-(--accent) transition-colors">
                                     <FiGithub size={22} />
                                 </a>
-                                <a href={project.links.external} className="hover:text-(--accent) transition-colors">
+                                <a
+                                    href={project.links.external}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-(--accent) transition-colors">
                                     <FiExternalLink size={22} />
                                 </a>
                             </div>

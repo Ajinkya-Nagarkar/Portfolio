@@ -19,10 +19,7 @@ export default function Experience() {
                 transition={{ duration: 0.5 }}
                 className="flex items-center gap-4 mb-10"
             >
-                <span className="text-(--accent) font-mono text-xl md:text-2xl font-bold">
-                    02.
-                </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-(--text-secondary)">
+                <h2 className="text-2xl md:text-3xl font-bold text-(--accent)">
                     Where I've Worked
                 </h2>
                 <div className="h-px bg-lightest-navy grow ml-4 max-w-xs"></div>

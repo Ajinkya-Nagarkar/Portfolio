@@ -49,7 +49,7 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Menu */}
-            <ul className="hidden md:flex gap-8 text-sm font-mono text-(--text-secondary)">
+            <ul className="hidden md:flex gap-10 text-l font-mono text-(--accent)">
                 {navLinks.map((link, i) => (
                     <motion.li
                         key={i}
@@ -58,8 +58,8 @@ export default function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 3.6 + (i * 0.1), duration: 0.3 }}
                     >
-                        <Link href={link.url} className="hover:text-(--accent) transition-colors">
-                            <span className="text-(--accent) mr-1">0{i + 1}.</span>
+                        <Link href={link.url} className="hover:text-(--text-secondary) transition-colors">
+                            <span className="text-(--accent) mr-1"></span>
                             {link.name}
                         </Link>
                     </motion.li>
