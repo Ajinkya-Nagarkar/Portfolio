@@ -32,8 +32,10 @@ export default function Contact() {
                 className="text-center max-w-2xl mx-auto"
             >
                 <p className="text-(--text-primary) text-lg mb-12 leading-relaxed">
-                    I am currently looking for full-time Software Engineering opportunities
+                    I am currently looking for Software Engineering Internship opportunities
                     starting May 2026.
+                </p>
+                <p>
                     Whether you have a question or just want to say hi,
                     my inbox is always open!
                 </p>

@@ -12,16 +12,7 @@ export const githubProjects = [
     }
   },
   {
-    "title": "Internship-Management-Portal-2.0",
-    "description": "No description provided.",
-    "tech": [],
-    "links": {
-      "github": "https://github.com/Ajinkya-Nagarkar/Internship-Management-Portal-2.0",
-      "external": ""
-    }
-  },
-  {
-    "title": "Ajinkya-Nagarkar",
+    "title": "Ajinkya Nagarkar",
     "description": "No description provided.",
     "tech": [],
     "links": {
@@ -30,7 +21,7 @@ export const githubProjects = [
     }
   },
   {
-    "title": "Tic-Tac-Toe",
+    "title": "Tic Tac Toe",
     "description": "No description provided.",
     "tech": [],
     "links": {
@@ -39,7 +30,7 @@ export const githubProjects = [
     }
   },
   {
-    "title": "Internship-Management-Portal",
+    "title": "Internship Management Portal",
     "description": "No description provided.",
     "tech": [],
     "links": {
@@ -48,7 +39,7 @@ export const githubProjects = [
     }
   },
   {
-    "title": "ai-spatial-tour-assistant",
+    "title": "Ai Spatial Tour Assistant",
     "description": "A GIS project combining spatial data processing (KML/GeoJSON) with AI-powered location analysis.",
     "tech": [],
     "links": {
@@ -57,7 +48,7 @@ export const githubProjects = [
     }
   },
   {
-    "title": "Natural-Language-SQL-Pipeline",
+    "title": "Natural Language SQL Pipeline",
     "description": "Text-to-SQL Analytics Engine using Kimi K2 & DuckDB",
     "tech": [],
     "links": {
@@ -66,7 +57,7 @@ export const githubProjects = [
     }
   },
   {
-    "title": "Local-LLM-Schema-Architect",
+    "title": "Local LLM Schema Architect",
     "description": "Automated ER Diagram generation using local LLMs (Ollama) and Streamlit.",
     "tech": [],
     "links": {

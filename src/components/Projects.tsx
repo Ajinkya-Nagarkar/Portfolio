@@ -65,9 +65,16 @@ export default function OtherProjects() {
                                         <a href={project.links.github} className="text-(--text-primary) hover:text-(--accent)">
                                             <FiGithub size={20} />
                                         </a>
-                                        <a href={project.links.external} className="text-(--text-primary) hover:text-(--accent)">
-                                            <FiExternalLink size={20} />
-                                        </a>
+                                        {project.links.external && (
+                                            <a
+                                                href={project.links.external}
+                                                className="text-(--text-primary) hover:text-(--accent)"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <FiExternalLink size={20} />
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
 

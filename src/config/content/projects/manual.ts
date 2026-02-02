@@ -4,7 +4,7 @@ export const manualProjects = [
         tech: ["React", "Python", "REST APIs", "SQL"],
         description: "Built a full-stack web application using React and Python to manage university internship data and workflows. Designed backend APIs to handle student submissions, faculty assignments, and approval flows, reducing manual coordination. Implemented role-based access for students and faculty, enabling streamlined tracking of internship status.",
         // In a real app, you would add an image path here, e.g., image: "/projects/internship.png"
-        links: { github: "#", external: "#" }
+        links: { github: "https://github.com/Ajinkya-Nagarkar/Internship-Management-Portal-2.0", external: "#" }
     },
     {
         title: "Solar Power Plant Maintenance Prediction",

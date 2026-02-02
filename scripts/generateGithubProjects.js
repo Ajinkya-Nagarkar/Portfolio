@@ -57,6 +57,13 @@ function extractGithubUrlsFromFile(filePath) {
     return out;
 }
 
+function toTitleCaseFromSlug(slug) {
+    return slug
+        .replace(/[-_]/g, " ")
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+
 // Basic fetch wrapper using global fetch (Node 18+ on GH runners)
 async function fetchJson(url, headers = {}) {
     const res = await fetch(url, { headers });
@@ -119,10 +126,11 @@ function toOutputTs(projects) {
                 if (dedupeSet.has(r.html_url)) return false;
                 return true;
             })
+            .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
             .map((r) => ({
-                title: r.name,
+                title: toTitleCaseFromSlug(r.name),
                 description: r.description || "No description provided.",
-                tech: [], // optional: infer from repo languages later
+                tech: [],
                 links: {
                     github: r.html_url,
                     external: r.homepage || "",
