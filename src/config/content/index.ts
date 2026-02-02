@@ -12,7 +12,8 @@ export const portfolioData = {
     experience,
     skills,
     featuredProjects,
-    projects:
-        manualProjects,
-        githubProjects,
+    projects:[
+        ...manualProjects,
+        ...githubProjects,
+    ]
 };
