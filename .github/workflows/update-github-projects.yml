@@ -27,13 +27,13 @@ jobs:
             - name: Run generator
               env:
                   GH_API_TOKEN: ${{ secrets.GH_API_TOKEN }}
-                  GITHUB_USER: ${{ github.event.inputs.github_user || secrets.GITHUB_USER }}
+                  PORTFOLIO_GITHUB_USERNAME: ${{ github.event.inputs.github_user || vars.PORTFOLIO_GITHUB_USERNAME }}
               run: |
-                  if [ -z "$GITHUB_USER" ]; then
-                    echo "GITHUB_USER is not set"
+                  if [ -z "$PORTFOLIO_GITHUB_USERNAME" ]; then
+                    echo "PORTFOLIO_GITHUB_USERNAME is not set"
                     exit 1
                   fi
-                  node scripts/generateGithubProjects.js --username "$GITHUB_USER"
+                  node scripts/generateGithubProjects.js --username "$PORTFOLIO_GITHUB_USERNAME"
 
             - name: Commit changes if any
               env:
