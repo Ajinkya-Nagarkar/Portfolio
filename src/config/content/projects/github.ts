@@ -8,7 +8,34 @@ export const githubProjects = [
     "tech": [],
     "links": {
       "github": "https://github.com/Ajinkya-Nagarkar/Portfolio",
-      "external": "https://ajinkya-portfolio-eight.vercel.app"
+      "external": "https://ajinkya-nagarkar.vercel.app/"
+    }
+  },
+  {
+    "title": "Geospatial Analytics Pipeline",
+    "description": "Geospatial data pipeline demonstrating spatial analysis, geometry generation, and interactive visualization using PostGIS, KML, OpenLayers, and ArcGIS.",
+    "tech": [],
+    "links": {
+      "github": "https://github.com/Ajinkya-Nagarkar/Geospatial-Analytics-Pipeline",
+      "external": ""
+    }
+  },
+  {
+    "title": "AI Generated Leaflet Mapper",
+    "description": "AI-assisted development of a Leaflet-based web mapping app using DYAD and a local LLM via Ollama.",
+    "tech": [],
+    "links": {
+      "github": "https://github.com/Ajinkya-Nagarkar/AI-generated-Leaflet-Mapper",
+      "external": ""
+    }
+  },
+  {
+    "title": "AI Multimodal Map Annotator",
+    "description": "Prompt-driven multimodal mapping experiment using Google AI Studio to annotate map images from coordinate inputs.",
+    "tech": [],
+    "links": {
+      "github": "https://github.com/Ajinkya-Nagarkar/AI-multimodal-Map-annotator",
+      "external": ""
     }
   },
   {
@@ -35,15 +62,6 @@ export const githubProjects = [
     "tech": [],
     "links": {
       "github": "https://github.com/Ajinkya-Nagarkar/Internship-Management-Portal",
-      "external": ""
-    }
-  },
-  {
-    "title": "Ai Spatial Tour Assistant",
-    "description": "A GIS project combining spatial data processing (KML/GeoJSON) with AI-powered location analysis.",
-    "tech": [],
-    "links": {
-      "github": "https://github.com/Ajinkya-Nagarkar/ai-spatial-tour-assistant",
       "external": ""
     }
   },
