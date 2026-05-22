@@ -1,18 +1,18 @@
 export const skills = [
     {
+        title: "Machine Learning & AI",
+        tech: ["PyTorch", "Scikit-learn", "FAISS", "HuggingFace", "LLMs", "RAG"],
+    },
+    {
+        title: "Data & Analytics",
+        tech: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Feature Engineering", "EDA"],
+    },
+    {
         title: "Programming Languages",
-        tech: ["Python", "JavaScript", "TypeScript", "C++"],
+        tech: ["Python", "TypeScript", "JavaScript", "C++", "SQL"],
     },
     {
-        title: "Frameworks & Libraries",
-        tech: ["React", "Angular", "Node.js"],
-    },
-    {
-        title: "Databases",
-        tech: ["SQL", "Firebase"],
-    },
-    {
-        title: "Tools & Platforms",
-        tech: ["Git", "Linux", "Docker"],
+        title: "Frameworks & Tools",
+        tech: ["React", "Angular", "Node.js", "Docker", "Git", "Linux"],
     },
 ]

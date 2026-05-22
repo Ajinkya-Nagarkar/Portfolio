@@ -10,8 +10,25 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-fira-code" });
 
 export const metadata: Metadata = {
-  title: "Ajinkya Nagarkar | Portfolio",
-  description: "Computer Science Graduate Student at USC",
+  title: "Ajinkya Nagarkar | ML Engineer & CS Graduate Student at USC",
+  description:
+    "ML Engineer and CS graduate student at USC. IEEE-published author, patent co-inventor, and builder of RAG systems and predictive ML pipelines.",
+  metadataBase: new URL("https://ajinkya-nagarkar.vercel.app"),
+  openGraph: {
+    title: "Ajinkya Nagarkar | ML Engineer & CS Graduate Student at USC",
+    description:
+      "ML Engineer and CS graduate student at USC. IEEE-published author, patent co-inventor, and builder of RAG systems and predictive ML pipelines.",
+    url: "https://ajinkya-nagarkar.vercel.app",
+    siteName: "Ajinkya Nagarkar",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ajinkya Nagarkar | ML Engineer & CS Graduate Student at USC",
+    description:
+      "ML Engineer and CS graduate student at USC. IEEE-published author, patent co-inventor, and builder of RAG systems and predictive ML pipelines.",
+  },
 };
 
 export default function RootLayout({

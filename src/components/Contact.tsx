@@ -31,13 +31,11 @@ export default function Contact() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-center max-w-2xl mx-auto"
             >
-                <p className="text-(--text-primary) text-lg mb-12 leading-relaxed">
-                    I am currently looking for Software Engineering Internship opportunities
-                    starting May 2026.
+                <p className="text-(--text-primary) text-lg mb-4 leading-relaxed">
+                    {portfolioData.personal.availability}
                 </p>
-                <p>
-                    Whether you have a question or just want to say hi,
-                    my inbox is always open!
+                <p className="text-(--text-primary)/80 text-base mb-12 leading-relaxed">
+                    Whether you have a question or just want to say hi, my inbox is always open!
                 </p>
 
                 <a

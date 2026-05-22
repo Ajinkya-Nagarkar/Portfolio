@@ -33,7 +33,7 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     <h2 className="text-4xl md:text-6xl font-bold text-(--text-primary) mb-6 leading-tight">
-                        I build things for the web.
+                        {portfolioData.personal.title}
                     </h2>
                 </motion.div>
 

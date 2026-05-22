@@ -15,7 +15,7 @@ module.exports = {
                 "light-slate": "#a8b2d1",
                 "lightest-slate": "#ccd6f6",
                 white: "#e6f1ff",
-                green: "#64ffda",
+                green: "#7B61FF",
             },
             fontFamily: {
                 sans: ["var(--font-inter)", "sans-serif"],
